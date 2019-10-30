@@ -1,0 +1,21 @@
+{
+  "name": "nice-job",
+  "version": "1.0.0",
+  "description": "my first project with Nuxt.js",
+  "author": "Felipe",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@mdi/font": "^4.5.95",
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
+    "@nuxtjs/vuetify": "^1.0.0"
+  }
+}
