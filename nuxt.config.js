@@ -1,6 +1,10 @@
 import VuetifyLoaderPlugin from 'vuetify-loader/lib/plugin'
 
 export default {
+  devServer:{
+    proxy: 'http://localhost:9000/registration'
+  },
+
   mode: 'spa',
   /*
   ** Headers of the page
