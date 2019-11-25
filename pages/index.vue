@@ -8,12 +8,12 @@
         <v-flex flex md7 xs12 offset-xs1>
           <img src="/images/nice-logo.png" width="120px" alt="logo nice job">
           <h1 style="font-size:40px">A união faz a força, a Job une.</h1>
-          <a href="/login"><v-btn style="border: 0; color: #FFF;border-radius: 60px;background-color: #451F55;width: 323px;height: 62px;font-size: 29px!important; text-transform: none;">Tenho um job!</v-btn></a>
-          <a href="/login"> <v-btn style="border: 0; color: #451F55;border-radius: 60px;background-color: #fff;width: 323px;height: 62px;font-size: 29px!important; text-transform: none;">Quero um job!</v-btn></a>
+          <v-btn to="/login" class="bt-home">Tenho um job!</v-btn>
+         <v-btn to="/login" class="bt-home-2">Quero um job!</v-btn>
         </v-flex>
         
         <v-flex md4 xs12>
-          <img src="/images/iphone.png" width="" alt="utimos servicos">
+          <img src="/images/iphone.png" class="img-home" alt="utimos servicos">
         </v-flex>
       
       </v-layout>
@@ -106,3 +106,11 @@
           
 </div>
 </template>
+
+<script>
+ 
+
+const routes = [
+  { path: '/login' }
+  ];
+</script>

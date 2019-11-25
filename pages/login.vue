@@ -23,14 +23,18 @@
             ></v-text-field>
             <p style=" align-items: left; margin-left: 442px;font-style: italic;">Esqueceu a senha?</p>
             
-            <v-btn @click="click" style="border: 0; color: #FFF;border-radius: 60px;background-color: #451F55;width: 436px;height: 50px;font-size: 25px!important; text-transform: none;">ENTRAR</v-btn>
+            <v-btn  to="/minha-area" style="border: 0; color: #FFF;border-radius: 60px;background-color: #451F55;width: 436px;height: 50px;font-size: 25px!important; text-transform: none;">ENTRAR</v-btn>
             </form>
             <hr style=" width: 50%; margin-top: 17px;">
             <br>   
-            <a href="/cadastro"><v-btn style="border: 0; color: #451F55;border-radius: 60px;background-color: #fff;width: 436px;height: 50px;font-size: 25px!important; text-transform: none;">CADASTRE-SE</v-btn></a>
+            <v-btn to="/cadastro" style="border: 0; color: #451F55;border-radius: 60px;background-color: #fff;width: 436px;height: 50px;font-size: 25px!important; text-transform: none;">CADASTRE-SE</v-btn>
         </center>
     </div>
 </v-container>
 
 </template>
-
+<script>
+  const routes = [
+  { path: '/minha-area' }
+];
+</script>

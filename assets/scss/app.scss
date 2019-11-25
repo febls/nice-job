@@ -27,7 +27,7 @@ ul {
 }
 
 #default-content {
-  margin-top: 158px;
+  margin-top: 0px;
 }
 
 #entrada {
@@ -232,4 +232,90 @@ border-radius:3px !important !important;
 
 .r-area {
   margin-left: -45px;
+}
+
+.p-first {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.one-p{
+  display: flex;
+  border: 1px solid #451F55;
+  width: auto;
+  height: 151px;
+  padding: 11px 9px 10px;
+  border-radius: 5px;
+}
+.one-left {
+  margin: 0px 4px;
+}
+
+.p-perfil {
+  background: #451F55 !important;
+  color: #fff !important;
+  text-transform: none !important;
+  border-radius: 22px !important;
+  font-size: 12px !important;
+}
+
+.p-escolher {
+  background: #fff !important;
+  color: #451F55 !important;
+  text-transform: none !important;
+  border-radius: 22px !important;
+  font-size: 12px !important;
+  border: 1px solid;
+}
+
+.two-p {
+  display: flex;
+  border: 1px solid #451F55;
+  width: auto;
+  height: 151px;
+  padding: 11px 9px 10px;
+  border-radius: 5px;
+}
+
+.two-left {
+  margin: 0px 4px;
+}
+
+.cadastro-fornecedor {
+  display: flex;
+  justify-content: center;
+}
+
+.f-cadastro {
+  width: 450px !important;
+}
+
+.img-home {
+  width: 400px;
+  margin-top: 59px;
+
+}
+
+.bt-home {
+  border: 0 !important; 
+  color: #FFF !important;
+  border-radius: 60px !important;
+  background-color: #451F55 !important;
+  width: 323px;height: 62px !important;
+  font-size: 29px!important; 
+  text-transform: none !important;
+}
+
+.bt-home-2 {
+  border: 0 !important; 
+  color: #451F55 !important;
+  border-radius: 60px !important;
+  background-color: #fff !important;
+  width: 323px;height: 62px !important;
+  font-size: 29px!important; 
+  text-transform: none !important;
+}
+
+.c-minha-area {
+  margin-top: 70px !important;
 }

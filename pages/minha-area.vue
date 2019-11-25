@@ -4,7 +4,7 @@
     <h2 class="internal-title">Olá, Felipe</h2> 
     </v-container>
 <br>
-<v-container>
+<v-container class="c-minha-area">
   <v-layout row wrap>
     <v-flex md4 xs12>
       <div class="m-left">
