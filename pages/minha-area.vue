@@ -1,73 +1,58 @@
 <template>
 <div>
+    <v-container class="page-header p-t-70">
+    <h2 class="internal-title">Olá, Felipe</h2> 
+    </v-container>
+<br>
+<v-container>
+  <v-layout row wrap>
+    <v-flex md4 xs12>
+      <div class="m-left">
+        <div class="m-dados">
+          <v-btn class="minha-area-btn">Meus Dados</v-btn>
+        </div>
+        <div class="m-sair">
+          <v-btn class="minha-area-btn">Sair</v-btn>
+        </div>
+      </div>
+    </v-flex>
+                  
+    <v-flex md1 xs12>
+      <div class="vl"></div>
+    </v-flex>
 
-  <v-container class="page-header p-t-70">
-<a href="/"><p>voltar</p></a>
-  </v-container>
-  <v-container class="page-header p-t-70">
-    <h1 class="section-title-login">Olá, {name}</h1> 
-  </v-container>
+    <v-flex md7 xs12 class="r-area">                  
+      <h2 class="m-h-area">Meus Pedidos</h2>
+                     <v-tabs
+                        left
+                        color="cyan"
+                        light
+                        icons-and-text
+                      >
+                        <v-tabs-slider color="#451F55"></v-tabs-slider>
+                        <v-tab >
+                          Ativos
+                        </v-tab>
+                        <v-tab >
+                          Finalizados
+                        </v-tab>
 
-   <v-container>
-                <v-layout row wrap>
-                    <v-flex md4 xs12>
-                        <img src="/images/perfil.png" width="120px" alt="logo nice job">
-                        <p>{name}, {age}</p>
-                        <v-btn small>Meus Dados</v-btn><v-btn small>Segurança</v-btn>
-                    </v-flex>
-                
-                    <v-flex md1 xs12>
-                       <div class="vl"></div>
-                     </v-flex>
+                        <v-tab-item>
+                          <v-card flat>
+                            <v-card-text>Ativos</v-card-text>
+                          </v-card>                           
+                        </v-tab-item>
 
-                    <v-flex md7 xs12>
-
-                          <v-btn @click="click" style="border: 0; color: #FFF;border-radius: 60px;background-color: #451F55;width: 436px;height: 50px;font-size: 25px!important; text-transform: none;">Publicar um job!</v-btn>
-                  <br><br>
-                  <spam>Últimos Serviços</spam><br>
-                    <br>
-                    <v-layout row wrap>
-                     <v-flex md6 xs12>
-                      <v-card  class="mx-auto"  max-width="300" outlined>
-                        <v-list-item three-line>
-                          <v-list-item-content>
-                            <div class="overline mb-4"> @category_service</div>
-                            <v-list-item-title class="headline mb-1"> @titulo_job</v-list-item-title><br>  
-                            <v-list-item-subtitle> @resume_service</v-list-item-subtitle>
-                          </v-list-item-content>
-                            <v-list-item-avatar tile size="80" color="grey">    
-                            </v-list-item-avatar>
-                          </v-list-item>
-                            <v-card-actions>
-                              <v-btn text>Ver</v-btn>
-                              
-                            </v-card-actions>
-                        </v-card>
-                        </v-flex>
-                      <v-flex md6 xs12>
-                      <v-card  class="mx-auto"  max-width="300" outlined>
-                        <v-list-item three-line>
-                          <v-list-item-content>
-                            <div class="overline mb-4"> @category_service</div>
-                            <v-list-item-title class="headline mb-1"> @titulo_job</v-list-item-title><br>  
-                            <v-list-item-subtitle> @resume_service</v-list-item-subtitle>
-                          </v-list-item-content>
-                            <v-list-item-avatar tile size="80" color="grey">    
-                            </v-list-item-avatar>
-                          </v-list-item>
-                            <v-card-actions>
-                              <v-btn text>Ver</v-btn>
-                            </v-card-actions>
-                        </v-card>
-                        </v-flex>
-                      </v-layout>
-                    </v-flex>
-
-                </v-layout>
-            </v-container>
-
-
-
+                        <v-tab-item>
+                          <v-card flat>
+                            <v-card-text>Finalizados</v-card-text>
+                          </v-card>                           
+                        </v-tab-item>
+                        </v-tabs>
+                      <br>        
+    </v-flex>
+  </v-layout>
+</v-container>
 </div>
 </template>
 
@@ -77,3 +62,42 @@
   height: 400px;
 }
 </style>
+
+
+<script>
+    /*const axios = require('axios')
+    export default {
+        data(){
+            return{
+                nome: '',
+                email: '',
+                telefone: '',
+                endereco: '',
+                senha: ''
+            }    
+        },
+        
+        methods: {
+            register: function(e){
+                const parametros = new URLSearchParams();
+                parametros.append("nome", this.nome);
+                parametros.append("email", this.email);
+                parametros.append("telefone", this.telefone);
+                parametros.append("endereco", this.endereco);
+                parametros.append("senha", this.senha);
+
+                axios.post('http://localhost:9000/registration', parametros);
+            }
+        }
+    }*/
+ 
+ export default {
+    data: () => ({
+      currentItem: 'tab-1',
+      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      
+      currentItem: 'tab-2',
+      text: 'Lorem ipsum dolor sit amet'
+    })
+  }
+</script>

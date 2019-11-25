@@ -15,7 +15,7 @@ ul {
   }
 
 .container {
-    max-width: 1400px !important;
+    max-width: 1280px !important;
 }
 
 .v-application {
@@ -24,6 +24,10 @@ ul {
 
 .theme--light.v-application {
   background: #ffffff !important;
+}
+
+#default-content {
+  margin-top: 158px;
 }
 
 #entrada {
@@ -157,4 +161,75 @@ footer ul {
 .top-base-register {
   height: 750px !important;
   padding-top: 135px!important;
+}
+
+.internal-title {
+  text-align: center;
+  font-weight: 500;
+}
+
+.internal-form {
+
+  width: 450px !important;
+
+}
+.internal-text-box {
+border: 2px solid 451F55 !important !important;
+border-radius:3px !important !important;
+
+}
+
+#pedido {
+  padding-bottom: 50px;
+}
+
+.m-left {    
+
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: flex-end;
+  border-spacing: 0px;
+  margin-right: 50px;
+}
+
+.minha-area-btn {
+
+  
+  width: 150px;
+  text-transform: none !important;
+  background-color: #ffff !important;
+  border: 2px solid #451f55;
+  border-radius: 16px !important;
+  
+}
+
+.m-dados {
+  padding-bottom: 20px;
+}
+.m-h-area{
+  font-weight: 500;
+}
+
+.v-slide-group__wrapper{
+  color: #000 !important;
+}
+
+.v-slide-group__content {
+  margin-top:39px !important;
+}
+.v-tab {
+  font-size: 17px !important;
+  text-transform: none !important;
+}
+
+
+
+.v-application .yellow {
+  background-color: #451F55 !important;
+  border-color: #451F55 !important;
+}
+
+.r-area {
+  margin-left: -45px;
 }
