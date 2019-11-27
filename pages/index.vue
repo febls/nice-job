@@ -1,13 +1,17 @@
 <template>
 <div class="index-container">
 
-  <div id="entrada" style="    margin-top: 60px;">
+  <!--<div id="entrada" style="margin-top: 60px;">-->
+
+
+  <div id="entrada">
+
     <v-container>
       <v-layout align-center fill-height row wrap>
         
         <v-flex flex md7 xs12 offset-xs1>
           <img src="/images/nice-logo.png" width="120px" alt="logo nice job">
-          <h1 style="font-size:40px">A união faz a força, a Job une.</h1>
+          <h1 style="font-size:40px" >A união faz a força, a Job une.</h1>
           <v-btn to="/login" class="bt-home">Tenho um job!</v-btn>
          <v-btn to="/login" class="bt-home-2">Quero um job!</v-btn>
         </v-flex>
@@ -89,26 +93,32 @@
     </v-container>
   </div>
 
-    <div id="action">
-            <v-container>
-                <h2 class="section-call">Oferece algum tipo de serviço? Entre para a Nice Job!  </h2>
-                <v-flex md12 xs12>
-                <center><button class="btn-action">Quero trabalhar com a Nice Job!</button></center>
-                 </v-flex>
-                <template>
-                    <v-flex md12 xs12>
-                        
-                    </v-flex>
-                </template>
-
-            </v-container>
-        </div>
+  <div id="action">
+    <v-container>
+        <h2 class="section-call">Oferece algum tipo de serviço? Entre para a Nice Job!  </h2>
+        <v-flex md12 xs12>
+        <center><button class="btn-action">Quero trabalhar com a Nice Job!</button></center>
+          </v-flex>
+        <template>
+            <v-flex md12 xs12>
+                
+            </v-flex>
+        </template>
+    </v-container>
+  </div>
           
 </div>
 </template>
 
 <script>
- 
+  export default {
+    beforeMount(){
+      if(sessionStorage.getItem("id")){
+        //Se existir um id é sinal que estou logado e então vamos redirecionar2
+        window.location.href = "/minha-area";
+      }
+    }
+  }
 
 const routes = [
   { path: '/login' }
